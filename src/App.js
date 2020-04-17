@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 
 // display doesn't need to be state as we can compute it
@@ -67,8 +66,6 @@ function App() {
   
   const numPress = index => {
     let newNum = 0;
-    let x = 0;
-    
 
     // If no op has been pressed, set firstNum, else set secondNum
     {operator === 0 ?
@@ -122,26 +119,6 @@ function App() {
       setFirstNum(newNum);
       setSecondNum(0);
     }
-
-   // console.log({operator});
-/*
-    
-    if (operator === "="){
-      console.log("= pressed");
-      let newNum = firstNum + secondNum;
-      setDisplay(newNum);
-      setFirstNum(newNum);
-    
-    }
-
-    if (operator === "+"){
-      console.log("+");
-      let newNum = firstNum;
-      setFirstNum(newNum);
-      setSecondNum(0);
-
-      setDisplay("+");
-    }*/
   };
 
   return (
